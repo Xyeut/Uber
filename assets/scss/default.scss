@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+button,
+span {
+    font-family: "Uber Move";
+    font-weight: 400;
+    white-space: pre-wrap;
+    line-break: normal;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.flex--wrap {
+    flex-wrap: wrap;
+}
