@@ -2,16 +2,16 @@
     <main class="home">
 
         <div class="home__container">
-            <div class="home__menu flex--wrap" @click="displayErrorNotification()" role="tablist">
-                <button class="menu__item " role="tab" tabindex="0" aria-selected="true">
+            <div class="home__menu flex--wrap" @click="displayErrorNotification()">
+                <button class="menu__item ">
                     <img src="~/assets/svg/Earn-filled.svg" alt="Drive & Deliver" class="menu--svg">
                     <h2 class="menu--name">Drive and Deliver</h2>
                 </button>
-                <button class="menu__item" @click="displayErrorNotification()" role="tab" tabindex="0" aria-selected="true">
+                <button class="menu__item" @click="displayErrorNotification()">
                     <img src="~/assets/svg/restaurant-outlined.svg" alt="Uber Eat" class="menu--svg">
                     <h2 class="menu--name">Eat</h2>
                 </button>
-                <button class="menu__item" @click="displayErrorNotification()" role="tab" tabindex="0" aria-selected="true">
+                <button class="menu__item" @click="displayErrorNotification()">
                     <img src="~/assets/svg/car-front-outlined.svg" alt="Uber Ride" class="menu--svg">
                     <h2 class="menu--name">Ride</h2>
                 </button>
@@ -110,7 +110,9 @@
 .menu--name {
     font-size: clamp(rem(15), 2vw, rem(19));
     font-weight: 500;
-    overflow-wrap: break-word
+    overflow-wrap: break-word;
+
+    color: $colors__primary
 }
 
 .home__menu__content {
